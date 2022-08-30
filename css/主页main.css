@@ -1,0 +1,198 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'klt';
+    src: url('/ttf/klt.ttf') format("truetype") /* Safari, Android, iOS */
+}
+
+/* reset */
+html, body, h1, h2, h3, h4, h5, h6, div, dl, dt, dd, ul, ol, li, p, blockquote, pre, hr, figure, table, caption, th, td, form, fieldset, legend, input, button, textarea, menu {
+    margin: 0;
+    padding: 0;
+    font-family: klt, 宋体, "Microsoft YaHei UI", serif;
+    /*font-family: jf, 宋体, "Microsoft YaHei UI", serif;*/
+}
+
+header, footer, section, article, aside, nav, hgroup, address, figure, figcaption, menu, details {
+    display: block;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+caption, th {
+    text-align: left;
+    font-weight: normal;
+}
+
+html, body, fieldset, img, iframe, abbr {
+    border: 0;
+}
+
+i, cite, em, var, address, dfn {
+    font-style: normal;
+}
+
+[hidefocus], summary {
+    outline: 0;
+}
+
+li {
+    list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6, small {
+    font-size: 100%;
+}
+
+sup, sub {
+    font-size: 83%;
+}
+
+pre, code, kbd, samp {
+    font-family: inherit;
+}
+
+q:before, q:after {
+    content: none;
+}
+
+textarea {
+    overflow: auto;
+    resize: none;
+}
+
+label, summary {
+    cursor: default;
+}
+
+a, button {
+    cursor: pointer;
+}
+
+h1, h2, h3, h4, h5, h6, em, strong, b {
+    font-weight: bold;
+}
+
+del, ins, u, s, a, a:hover {
+    text-decoration: none;
+}
+
+body, textarea, input, button, select, keygen, legend {
+    font: 12px/1.14 arial, \5b8b\4f53;
+    color: #333;
+    outline: 0;
+}
+
+
+a, a:hover {
+    color: #333;
+}
+
+/* 设置背景图片 */
+body {
+    background: url("/images/bg.jpg") 100% 100% no-repeat;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    text-align: center;
+}
+
+.clear {
+    clear: both;
+}
+
+#main {
+    padding-top: 50px;
+}
+
+#logo {
+    max-height: 130px;
+}
+
+#title {
+    font-size: 35px;
+    margin-top: 25px;
+    font-weight: bold;
+}
+
+/* 副标题 */
+#subheading {
+    margin: 35px auto 50px;
+}
+
+#subheading ul li {
+    display: inline-block;
+    color: black;
+    font-size: 16px;
+    margin-left: 15px;
+    letter-spacing: 10px;
+}
+
+#menuGroup {
+    margin-top: 125px;
+}
+
+/* 菜单 */
+#menuGroup .menu a {
+    background: url("/images/menu-bg.png") no-repeat 100% 100%;
+    background-size: cover;
+    width: 100px;
+    height: 25px;
+    color: #e2b5a4;
+    display: block;
+    line-height: 25px;
+    margin: 0 auto 25px;
+    transition: all 0.5s;
+}
+
+#menuGroup .menu a:hover {
+    /*width: 175px;*/
+    /*height: 43px;*/
+    /*line-height: 43px;*/
+    color: #e2b5a4;
+    transform: scale(1.5); /*放大1.1倍*/
+}
+
+/* 底部 */
+
+#bottom {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    color: #000000;
+}
+
+@keyframes rowup {
+    0% {
+        background-position-x: 0;
+    }
+    100% {
+        background-position-x: 100%;
+    }
+
+}
+
+#yun1-group {
+    position: absolute;
+    width: 100%;
+    height: 40%;
+    top: 0;
+    overflow: hidden;
+}
+
+#yun1 {
+    height: 100%;
+    background: url("../images/yun1.png") 100% 100% repeat-x;
+    opacity: 0.5;
+    -webkit-animation: 25s rowup linear infinite;
+    animation: 25s rowup linear infinite;
+}
+
+#title_my {
+    top: 500px;
+    width: 60%;
+    border: 3px solid #0077ff;
+    padding: 10px;
+}
